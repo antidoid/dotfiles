@@ -6,6 +6,7 @@ if status is-interactive
     set -g fish_prompt_pwd_dir_length 3
     
     set fish_greeting ""
+
     # Aliases
     alias ll='exa -lbh --icons --color=auto --group-directories-first'
     alias la='exa -lah --icons --color=auto --group-directories-first'
@@ -14,8 +15,9 @@ if status is-interactive
     alias nv='nvim $1'
     alias cat='bat'
     alias mann='tldr $1'
+
     # dotfiles
-    alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+    # alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
     
     # Auto Start Commands
     set -x fish_startup_command 'fortune -s && starship init fish | source'
@@ -25,8 +27,4 @@ if status is-interactive
         set -e fish_startup_command
     end
 
-    # Prompt
-    # function fish_prompt -d "Write out the prompt"
-    #     printf '%s%s%s%s' \ (set_color $fish_color_cwd) (prompt_pwd) \n ' 󰊠   ' (set_color normal)
-    # end
 end
