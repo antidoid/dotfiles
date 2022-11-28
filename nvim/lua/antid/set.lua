@@ -15,6 +15,7 @@ vim.g.maplocalleader = ' '
 
 vim.o.mouse = 'a'
 vim.o.undofile = true
+vim.o.cursorline = true
 
 vim.o.ignorecase = true
 vim.o.smartcase = true
