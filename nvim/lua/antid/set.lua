@@ -22,7 +22,6 @@ vim.o.smartcase = true
 vim.o.hlsearch = false
 vim.o.incsearch = true
 
-
 -- ??
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
