@@ -21,5 +21,4 @@ return require('packer').startup(function(use)
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable "make" == 1 }
   use "ThePrimeagen/vim-be-good"
   use {"rose-pine/neovim", as = "rose-pine"}
-  use 'lewis6991/gitsigns.nvim'
 end)
