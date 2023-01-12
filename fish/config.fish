@@ -25,6 +25,7 @@ if status is-interactive
     if set -q fish_startup_command
         eval $fish_startup_command
         set -e fish_startup_command
+        export PATH="/home/piyush/go/bin/:$PATH"
     end
 
 end
