@@ -1,0 +1,25 @@
+#!/bin/bash
+
+function send_notification() {
+    volume_a=$(pulsemixer --get-volume)
+    volume=$(echo "$volume_a" | grep --extended-regexp --only-matching "^[0-9]+")
+	dunstify -a "changevolume" -u low -r "9993" -h int:value:"$volume"  "Volume: $volume%" -t 2000
+}
+
+case $1 in
+up)
+	# Set the volume on (if it was muted)
+    pactl set-sink-mute @DEFAULT_SINK@ off
+
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+	send_notification $1
+	;;
+down)
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+	send_notification $1
+	;;
+mute)
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+	;;
+esac
+
