@@ -1,17 +1,17 @@
 #!/bin/bash
 
 function send_notification() {
-    brightness=$(brightnessctl i | grep --extended-regexp --only-matching  "[0-9]+%" | grep --only-matching --extended-regexp "[0-9]+")
+    brightness=$(light | grep --only-matching  --extended-regexp "^[0-9]+")
 	dunstify -a "changebrightness" -u low -r "9994" -h int:value:"$brightness"  "Brightness: $brightness%" -t 2000
 }
 
 case $1 in
 up)
-    brightnessctl set 5%+
+    light -A 5
 	send_notification
 	;;
 down)
-    brightnessctl set 5%-
+    light -U 5
 	send_notification
 	;;
 esac
