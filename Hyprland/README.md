@@ -9,6 +9,3 @@
 
 - Note: Install Any Nerdfont into your system.
 - Note: Some experimental features like **wlr/workspaces** may not work in the dnf package, in that case consider building from source with experimental features enabled in the `meson_options.txt`
-
-- TODO:
-    - Figure out a wait to timeout the screen to blank which does not currently seem to be possible through `swaylock`
