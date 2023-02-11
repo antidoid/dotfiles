@@ -5,7 +5,7 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "height": 0,
+    "margin-top": 0,
     "modules-left": [
         "custom/applications",
         "clock",
@@ -22,25 +22,13 @@
     ],
 
     "hyprland/window": {
-        "format": "<span rise='1000'>⁙</span> {} <span rise='1000'>⁙</span>",
+        "format": "<span rise='1000'>⁙</span> {} <span rise='1000'>⁙</span>"
     },
     "wlr/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "on-click": "activate",
-        "format": "{name}",
-        // "persistent_workspaces": {
-        //     "1": [],
-        //     "2": [],
-        //     "3": [],
-        //     "4": [],
-        //     "5": [],
-        //     "6": [],
-        //     "7": [],
-        //     "8": [],
-        //     "9": [],
-        //     "10": []
-        // }
+        "format": "{name}"
     },
     "tray": {
         "icon-size": 13,
@@ -69,7 +57,7 @@
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{time} {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""],
+        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
