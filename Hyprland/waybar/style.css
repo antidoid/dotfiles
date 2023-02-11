@@ -1,3 +1,5 @@
+@import "mocha.css";
+
 * {
     border: none;
     border-radius: 0;
@@ -52,6 +54,8 @@ tooltip {
 #custom-updates,
 #custom-caffeine,
 #custom-weather,
+#custom-power,
+#custom-applications,
 #window,
 #clock,
 #battery,
@@ -89,7 +93,7 @@ tooltip {
 
 #clock {
     color: #fab387;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px;
     margin-left: 10px;
     border-right: 0px;
 }
@@ -108,23 +112,24 @@ tooltip {
     border-radius: 0 10px 10px 0;
 }
 
-#pulseaudio.microphone {
-    color: #cba6f7;
-    border-left: 0px;
-}
-
 #battery {
     color: #a6e3a1;
     border-radius: 10px 0 0 10px;
     border-left: 0px;
 }
 
-#custom-weather {
-    border-radius: 0px 10px 10px 0px;
-    border-right: 0px;
-    margin-left: 0px;
-}
-
 #network {
     font-size: 20px;
+}
+
+#custom-applications {
+    border-radius: 10px;
+    color: #74c7ec;
+    margin-left: 10px;
+}
+
+#custom-power {
+    border-radius: 10px;
+    margin-right: 10px;
+    color: @red;
 }
