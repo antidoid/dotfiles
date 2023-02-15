@@ -8,6 +8,10 @@ nnoremap("<C-u>", "<C-u>zz")
 nnoremap("n", "nzzzv")
 nnoremap("N", "Nzzzv")
 nnoremap("U", "<C-r>")
+nnoremap("<C-h>", "<C-w>h")
+nnoremap("<C-l>", "<C-w>l")
+nnoremap("<C-j>", "<C-w>j")
+nnoremap("<C-k>", "<C-w>k")
 
 -- Insert mode Remaps
 inoremap("jk", "<esc>")
