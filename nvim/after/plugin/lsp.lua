@@ -19,7 +19,6 @@ lsp.configure('sumneko_lua', {
     }
 })
 
-
 lsp.set_preferences({
     suggest_lsp_servers = false,
     sign_icons = {
