@@ -1,8 +1,8 @@
 window:
     opacity: 0.80
     dimensions:
-      columns: 105
-      lines: 27
+      columns: 126
+      lines: 31
     padding:
       x: 5
       y: 5
@@ -15,18 +15,21 @@ scrolling:
   history: 10000
   multiplier: 3
 
+shell:
+  program: /bin/fish
+
 font:
     normal:
-      family: Input Mono Condensed
-      style: Medium
+      family: Input
+      style: Regular
     bold:
-      family: Input Mono Condensed
+      family: Input
       style: Bold
     italic:
-      family: Input Mono Condensed
+      family: Input
       style: Italic
     bold_italic:
-      family: Input Mono Condensed
+      family: Input
       style: BoldItalic
     size: 12.5
 
@@ -159,6 +162,9 @@ schemes:
     primary:
       background: '#2D2A2E'
       foreground: '#FCFCFA'
+    cursor:
+      text: CellBackground
+      cursor: '#FC9867'
 
     # Normal colors
     normal:
