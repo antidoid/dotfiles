@@ -14,6 +14,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 vim.o.mouse = 'a'
+vim.o.mousemoveevent = true
 vim.o.undofile = true
 vim.o.cursorline = true
 

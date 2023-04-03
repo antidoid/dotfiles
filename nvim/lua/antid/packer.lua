@@ -37,7 +37,8 @@ return require('packer').startup(function(use)
             -- Snippets
             {'L3MON4D3/LuaSnip'},             -- Required
             {'rafamadriz/friendly-snippets'}, -- Optional
-  }
-}
+        }
+    }
 
+    use { 'akinsho/bufferline.nvim', tag = "v3.*" }         -- Tab Support
 end)
