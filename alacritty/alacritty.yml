@@ -157,7 +157,7 @@ schemes:
     # Cursor colors
     cursor:
       text: CellBackground
-      cursor: "#D08770"
+      cursor: "#EBBCBA"
 
   ### Monokai ###
   MonokaiPro: &MonokaiPro # Default colors
