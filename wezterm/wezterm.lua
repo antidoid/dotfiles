@@ -11,15 +11,19 @@ if wezterm.config_builder then
 end
 
 -- This is where you actually apply your config choices
-
-config.color_scheme = "Gruvbox dark, soft (base16)"
-config.window_background_opacity = 0.9
-config.font = wezterm.font("Input")
-config.window_decorations = "RESIZE"
-config.initial_rows = 31
-config.initial_cols = 131
-config.hide_tab_bar_if_only_one_tab = true
-config.default_prog = { "fish" }
+config = {
+	color_scheme = "Gruvbox dark, soft (base16)",
+	window_background_opacity = 0.9,
+	font = wezterm.font_with_fallback({
+		"Input",
+		{ family = "Symbols Nerd Font Mono", scale = 0.55 },
+	}),
+	window_decorations = "RESIZE",
+	initial_rows = 31,
+	initial_cols = 131,
+	hide_tab_bar_if_only_one_tab = true,
+	default_prog = { "fish" },
+}
 
 -- and finally, return the configuration to wezterm
 return config
