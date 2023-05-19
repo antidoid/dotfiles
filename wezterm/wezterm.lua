@@ -54,6 +54,26 @@ config = {
 			mods = "CTRL|SHIFT",
 			action = wezterm.action.ActivatePaneDirection("Down"),
 		},
+		{
+			key = "h",
+			mods = "CTRL|ALT|SHIFT",
+			action = wezterm.action.AdjustPaneSize({ "Left", 5 }),
+		},
+		{
+			key = "j",
+			mods = "CTRL|ALT|SHIFT",
+			action = wezterm.action.AdjustPaneSize({ "Down", 5 }),
+		},
+		{
+			key = "k",
+			mods = "CTRL|ALT|SHIFT",
+			action = wezterm.action.AdjustPaneSize({ "Up", 5 }),
+		},
+		{
+			key = "l",
+			mods = "CTRL|ALT|SHIFT",
+			action = wezterm.action.AdjustPaneSize({ "Right", 5 }),
+		},
 	},
 }
 
