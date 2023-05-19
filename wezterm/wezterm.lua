@@ -12,8 +12,8 @@ end
 
 -- This is where you actually apply your config choices
 config = {
-	color_scheme = "Gruvbox dark, soft (base16)",
-	window_background_opacity = 0.9,
+	color_scheme = "Material Darker (base16)",
+	window_background_opacity = 0.90,
 	font = wezterm.font_with_fallback({
 		"Input",
 		{ family = "Symbols Nerd Font Mono", scale = 0.55 },
@@ -23,6 +23,38 @@ config = {
 	initial_cols = 131,
 	hide_tab_bar_if_only_one_tab = true,
 	default_prog = { "fish" },
+	keys = {
+		{
+			key = "|",
+			mods = "CTRL|SHIFT",
+			action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+		},
+		{
+			key = "\\",
+			mods = "CTRL",
+			action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+		},
+		{
+			key = "h",
+			mods = "CTRL|SHIFT",
+			action = wezterm.action.ActivatePaneDirection("Left"),
+		},
+		{
+			key = "l",
+			mods = "CTRL|SHIFT",
+			action = wezterm.action.ActivatePaneDirection("Right"),
+		},
+		{
+			key = "k",
+			mods = "CTRL|SHIFT",
+			action = wezterm.action.ActivatePaneDirection("Up"),
+		},
+		{
+			key = "j",
+			mods = "CTRL|SHIFT",
+			action = wezterm.action.ActivatePaneDirection("Down"),
+		},
+	},
 }
 
 -- and finally, return the configuration to wezterm
