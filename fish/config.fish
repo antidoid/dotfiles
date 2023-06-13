@@ -15,6 +15,8 @@ if status is-interactive
     alias nv='nvim $1'
     alias cat='bat'
     alias mann='tldr $1'
+    alias hms='home-manager switch --flake ~/.config/home-manager/#antid'
+    alias hmu='nix flake update ~/.config/home-manager/ && hms'
 
     # dotfiles
     # alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -27,5 +29,8 @@ if status is-interactive
         set -e fish_startup_command
         export PATH="/home/piyush/go/bin/:$PATH"
     end
-
+    
+    function vaibhav
+        echo "mera bhai hai"
+    end
 end
