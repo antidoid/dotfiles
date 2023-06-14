@@ -21,18 +21,23 @@ in {
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    ngrok
+    # GUI
     figma-linux
     postman
-    python311Packages.ipython
-    neovim
     apostrophe
     fragments
     gnome.gnome-font-viewer
     vlc
     firefox
-    nixgl.nixGLIntel
     (nixGL wezterm)
+    megasync
+    libreoffice
+
+    # CLI
+    ngrok
+    python311Packages.ipython
+    neovim
+    nixgl.nixGLIntel
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
