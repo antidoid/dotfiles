@@ -1,6 +1,9 @@
 { config, pkgs, ... }:
 
-{
+let nixGL = import ./nixGL.nix { inherit pkgs config; };
+in {
+  # imports = [ ./options.nix ];
+
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "antid";
@@ -28,6 +31,8 @@
     gnome.gnome-font-viewer
     vlc
     firefox
+    nixgl.nixGLIntel
+    (nixGL wezterm)
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
