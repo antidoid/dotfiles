@@ -29,8 +29,4 @@ if status is-interactive
         set -e fish_startup_command
         export PATH="/home/piyush/go/bin/:$PATH"
     end
-    
-    function vaibhav
-        echo "mera bhai hai"
-    end
 end
