@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
-let nixGL = import ./nixGL.nix { inherit pkgs config; };
+let
+  nixGL = import ./nixGL.nix { inherit pkgs config; };
 in {
   home.username = "antid";
   home.homeDirectory = "/home/antid";
@@ -28,8 +29,36 @@ in {
     exa
     fortune
     starship
+
+    # GNOME Extensions
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.appindicator
+    gnomeExtensions.dash-to-dock
+    gnomeExtensions.hide-activities-button
+    gnomeExtensions.internet-speed-meter
+    gnomeExtensions.quick-settings-tweaker
   ];
 
+  dconf = {
+    enable = true;
+    settings = {
+      "org/gnome/shell" = {
+        disable-user-extensions = false;
+
+        enabled-extensions = [
+          "blur-my-shell@aunetx"
+          "appindicatorsupport@rgcjonas.gmail.com"
+          "dash-to-dock@micxgx.gmail.com"
+          "Hide_Activities@shay.shayel.org"
+          "InternetSpeedMeter@alshakib.dev"
+          "quick-settings-tweaks@qwreey"
+        ];
+
+        disabled-extensions = [];
+      };
+    };
+  };
+  
   home.file = {
   };
 
