@@ -21,6 +21,7 @@ in {
     libreoffice
 
     # CLI
+    fish
     ngrok
     python311Packages.ipython
     neovim
