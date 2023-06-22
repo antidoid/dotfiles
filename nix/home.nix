@@ -1,5 +1,4 @@
 { config, pkgs, ... }:
-
 let
   nixGL = import ./nixGL.nix { inherit pkgs config; };
 in {
