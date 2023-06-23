@@ -12,6 +12,7 @@ end
 
 -- This is where you actually apply your config choices
 config = {
+	hide_mouse_cursor_when_typing = false,
 	color_scheme = "Material Darker (base16)",
 	window_background_opacity = 0.90,
 	font = wezterm.font_with_fallback({
