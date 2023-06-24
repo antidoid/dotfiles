@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 let
   nixGL = import ./nixGL.nix { inherit pkgs config; };
 in {
@@ -30,6 +30,9 @@ in {
     fortune
     starship
 
+    # fonts
+    inter
+
     # GNOME Extensions
     gnomeExtensions.blur-my-shell
     gnomeExtensions.appindicator
@@ -58,6 +61,8 @@ in {
       };
     };
   };
+
+  fonts.fontconfig.enable = true;
   
   home.file = {
   };
