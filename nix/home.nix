@@ -14,10 +14,11 @@ in {
     fragments
     gnome.gnome-font-viewer
     vlc
-    firefox
+    (nixGL firefox)
     (nixGL wezterm)
     megasync
     libreoffice
+    gnome-frog
 
     # CLI
     fish
