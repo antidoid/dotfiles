@@ -5,6 +5,11 @@ in {
   home.username = "antid";
   home.homeDirectory = "/home/antid";
   home.stateVersion = "23.05";
+  
+  nixpkgs.config = {
+    allowUnfree = true;
+    allowUnfreePredicate = _: true;
+  };
 
   home.packages = with pkgs; [
     # GUI
@@ -20,6 +25,7 @@ in {
     exa
     fortune
     starship
+    brightnessctl
 
     # fonts
     inter
@@ -50,6 +56,50 @@ in {
 
         disabled-extensions = [];
       };
+
+      "org/gnome/desktop/wm/keybindings" = {
+        close = ["<Super>q"];
+        move-to-workspace-left = ["<Shift><Super>h"];
+        move-to-workspace-right = ["<Shift><Super>l"];
+        switch-to-workspace-left = ["<Super>h"];
+        switch-to-workspace-right = ["<Super>l"];
+        toggle-fullscreen = ["<Super>f"];
+        minimize = [];
+      };
+
+      "org/gnome/mutter/keybindings" = {
+        toggle-tiled-left = ["<Super>j"];
+        toggle-tiled-right = ["<Super>k"];
+      };
+
+      "org/gnome/settings-daemon/plugins/media-keys" = {
+        www =  ["<Super>b"];
+        screensaver = ["<Shift><Super>Escape"];
+      };
+
+      "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+          binding = "<Super>Return";
+          command = "wezterm";
+          name = "Terminal";
+      };
+
+      "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
+        binding = "<Super>e";
+        command = "nautilus /home/antid";
+        name = "File Manager";
+      };
+
+      "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
+        binding = "<Shift><Super>period";
+        command = "brightnessctl set +5%";
+        name = "Increase Brightness";
+      };
+      
+      "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
+        binding = "<Shift><Super>comma";
+        command = "brightnessctl set 5%-";
+        name = "Decrease Brightness";
+      };
     };
   };
 
@@ -59,11 +109,6 @@ in {
   };
 
   home.sessionVariables = {
-  };
-  
-  nixpkgs.config = {
-    allowUnfree = true;
-    allowUnfreePredicate = _: true;
   };
   
   programs.home-manager.enable = true;
