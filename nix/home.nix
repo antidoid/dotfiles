@@ -70,6 +70,7 @@ in {
       "org/gnome/mutter/keybindings" = {
         toggle-tiled-left = ["<Super>j"];
         toggle-tiled-right = ["<Super>k"];
+        auto-maximize = "False";
       };
 
       "org/gnome/settings-daemon/plugins/media-keys" = {
