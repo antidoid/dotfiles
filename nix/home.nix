@@ -8,17 +8,7 @@ in {
 
   home.packages = with pkgs; [
     # GUI
-    figma-linux
-    postman
-    apostrophe
-    fragments
-    gnome.gnome-font-viewer
-    vlc
-    (nixGL firefox)
     (nixGL wezterm)
-    megasync
-    libreoffice
-    gnome-frog
 
     # CLI
     fish
