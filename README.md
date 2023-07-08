@@ -19,7 +19,7 @@ cp -rft ~/.config nvim wezterm fish environment.d starship.toml
 ```
 3. Install the nix packages
 ```sh
-hms
+home-manager switch --flake ~/.config/home-manager/#antid
 ```
 4. Install the flatpaks
 ```sh
