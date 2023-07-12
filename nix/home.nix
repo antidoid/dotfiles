@@ -55,8 +55,42 @@ in {
         ];
 
         disabled-extensions = [];
+
+        favorite-apps = [
+          "org.gnome.Software.desktop"
+          "org.gnome.Nautilus.desktop"
+          "org.wezfurlong.wezterm.desktop"
+          "org.mozilla.firefox.desktop"
+          "com.spotify.Client.desktop"
+          "com.stremio.Stremio.desktop"
+        ];
       };
 
+      "org/gnome/desktop/interface" = {
+        font-name = "Inter 10";
+        document-font-name = "Inter 11";
+        monospace-font-name = "Inter 10";
+        titlebar-font = "Inter Bold 11";
+        gtk-theme = "Adwaita-dark";
+        cursor-theme = "Adwaita";
+        enable-hot-corners = false;
+        font-anitaliasing = "rgba";
+        icon-theme = "Adwaita";
+        show-battery-percentage = true;
+        clock-show-date = true;
+      };
+
+      "org/gnome/desktop/sound" = {
+        allow-volume-above-100-percent = true;
+      };
+
+      "org/gnome/mutter" = {
+        auto-maximize = false;
+        center-new-windows = true;
+      };
+
+      "org/gnome/desktop/session".idle-delay = 300;
+      
       "org/gnome/desktop/wm/keybindings" = {
         close = ["<Super>q"];
         move-to-workspace-left = ["<Shift><Super>h"];
@@ -70,7 +104,6 @@ in {
       "org/gnome/mutter/keybindings" = {
         toggle-tiled-left = ["<Super>j"];
         toggle-tiled-right = ["<Super>k"];
-        auto-maximize = "False";
       };
 
       "org/gnome/settings-daemon/plugins/media-keys" = {
