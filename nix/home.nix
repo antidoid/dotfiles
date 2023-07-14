@@ -26,6 +26,7 @@ in {
     fortune
     starship
     brightnessctl
+    lazygit
 
     # fonts
     inter
