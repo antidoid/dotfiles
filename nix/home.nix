@@ -27,6 +27,8 @@ in {
     starship
     brightnessctl
     lazygit
+    tldr
+    wl-clipboard
 
     # fonts
     inter
@@ -65,6 +67,16 @@ in {
           "com.spotify.Client.desktop"
           "com.stremio.Stremio.desktop"
         ];
+      };
+
+      "org/gnome/shell/extensions/dash-to-dock" = {
+	dock-position = "LEFT";
+	custom-theme-shrink = true;
+	dash-max-icon-size = 25;
+	show-trash = false;
+	running-indicator-style = "DASHES";
+	transparency-mode = "FIXED";
+	background-opacity = 0.5;
       };
 
       "org/gnome/desktop/interface" = {
