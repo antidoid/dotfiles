@@ -29,6 +29,8 @@ in {
     lazygit
     tldr
     wl-clipboard
+    gcc
+    nodejs
 
     # fonts
     inter
@@ -70,13 +72,14 @@ in {
       };
 
       "org/gnome/shell/extensions/dash-to-dock" = {
-	dock-position = "LEFT";
-	custom-theme-shrink = true;
-	dash-max-icon-size = 25;
-	show-trash = false;
-	running-indicator-style = "DASHES";
-	transparency-mode = "FIXED";
-	background-opacity = 0.5;
+	      dock-position = "LEFT";
+	      custom-theme-shrink = true;
+	      dash-max-icon-size = 25;
+	      show-trash = false;
+	      running-indicator-style = "DASHES";
+	      transparency-mode = "FIXED";
+	      background-opacity = 0.5;
+	      hot-keys = false;
       };
 
       "org/gnome/desktop/interface" = {
