@@ -31,6 +31,7 @@ in {
     wl-clipboard
     gcc
     nodejs
+    neofetch
 
     # fonts
     inter
