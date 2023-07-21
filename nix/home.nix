@@ -11,6 +11,12 @@ in {
     allowUnfreePredicate = _: true;
   };
 
+  targets.genericLinux.enable = true;
+  fonts.fontconfig.enable = true;
+
+  xdg.enable = true;
+  xdg.mime.enable = true;
+  
   home.packages = with pkgs; [
     # GUI
     (nixGL wezterm)
@@ -32,6 +38,7 @@ in {
     gcc
     nodejs
     neofetch
+    htop
 
     # fonts
     inter
@@ -163,7 +170,14 @@ in {
     };
   };
 
-  fonts.fontconfig.enable = true;
+  programs.bash = {
+    enable = true;
+    enableCompletion = true;
+    initExtra = ''
+      export PS1="\\[\\033[01;32m\\]\\u@\\h:\\w\\[\\033[00m\\]\\$ "
+    '';
+    historyFile = "${config.xdg.configHome}/bash_history";
+  };
   
   home.file = {
   };
