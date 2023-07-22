@@ -35,4 +35,8 @@ flatpak install -y $(< flatpaks.txt) # bash
 flatpak install -y (cat flatpaks.txt) # fish
 ```
 
-5. Logout and log back in.
+5. Update the destop cache
+
+```sh
+sudo update-desktop-database ~/.local/share/applications ~/.nix-profile/share/applications -v
+```
