@@ -39,6 +39,7 @@ in {
     nodejs
     neofetch
     htop
+    python311Packages.pip
 
     # fonts
     inter
@@ -88,8 +89,13 @@ in {
 	      transparency-mode = "FIXED";
 	      background-opacity = 0.5;
 	      hot-keys = false;
+	      show-icons-emblems = false;
       };
 
+      "org/gnome/shell/extensions/quick-settings-tweaks" = {
+        volume-mixer-enabled = false;
+      };
+      
       "org/gnome/desktop/interface" = {
         font-name = "Inter 10";
         document-font-name = "Inter 11";
