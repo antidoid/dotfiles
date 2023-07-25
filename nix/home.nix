@@ -94,6 +94,7 @@ in {
 
       "org/gnome/shell/extensions/quick-settings-tweaks" = {
         volume-mixer-enabled = false;
+        user-removed-buttons = [ "DarkModeToggle" ];
       };
       
       "org/gnome/desktop/interface" = {
