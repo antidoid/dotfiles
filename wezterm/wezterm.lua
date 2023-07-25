@@ -20,8 +20,8 @@ config = {
 		{ family = "Symbols Nerd Font Mono", scale = 0.55 },
 	}),
 	window_decorations = "RESIZE",
-	initial_rows = 31,
-	initial_cols = 131,
+	initial_rows = 33,
+	initial_cols = 133,
 	hide_tab_bar_if_only_one_tab = true,
 	default_prog = { "fish" },
 	keys = {
