@@ -1,27 +1,20 @@
--- Pull in the wezterm API
 local wezterm = require("wezterm")
 
--- This table will hold the configuration.
 local config = {}
-
--- In newer versions of wezterm, use the config_builder which will
--- help provide clearer error messages
 if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
--- This is where you actually apply your config choices
 config = {
 	hide_mouse_cursor_when_typing = false,
-	color_scheme = "Material Darker (base16)",
-	window_background_opacity = 0.90,
+	color_scheme = "UnderTheSea",
 	font = wezterm.font_with_fallback({
 		"Input",
 		{ family = "Symbols Nerd Font Mono", scale = 0.55 },
 	}),
 	window_decorations = "RESIZE",
-	initial_rows = 33,
-	initial_cols = 133,
+	initial_rows = 42,
+	initial_cols = 150,
 	hide_tab_bar_if_only_one_tab = true,
 	default_prog = { "fish" },
 	keys = {
@@ -78,5 +71,4 @@ config = {
 	},
 }
 
--- and finally, return the configuration to wezterm
 return config
