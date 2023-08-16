@@ -20,6 +20,7 @@ in {
   home.packages = with pkgs; [
     # GUI
     (nixGL wezterm)
+    (nixGL vscode)
 
     # CLI
     fish
@@ -52,6 +53,14 @@ in {
     gnomeExtensions.internet-speed-meter
     gnomeExtensions.quick-settings-tweaker
   ];
+
+  programs = {
+    git = {
+      enable = true;
+      userEmail = "singhpiyush998@gmail.com";
+      userName = "antidoid";
+    };
+  };
 
   dconf = {
     enable = true;

@@ -10,3 +10,4 @@ org.libreoffice.LibreOffice
 org.mozilla.firefox
 org.videolan.VLC
 io.github.diegoivanme.flowtime
+io.github.celluloid_player.Celluloid
