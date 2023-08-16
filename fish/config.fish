@@ -22,7 +22,7 @@ if status is-interactive
     # alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
     
     # Auto Start Commands
-    set -x fish_startup_command 'fortune -s && starship init fish | source'
+    set -x fish_startup_command 'fortune -as && starship init fish | source'
 
     if set -q fish_startup_command
         eval $fish_startup_command
