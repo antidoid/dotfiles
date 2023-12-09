@@ -52,6 +52,7 @@ in {
     gnomeExtensions.dash-to-dock
     gnomeExtensions.internet-speed-meter
     gnomeExtensions.quick-settings-tweaker
+    gnomeExtensions.compact-top-bar
   ];
 
   programs = {
