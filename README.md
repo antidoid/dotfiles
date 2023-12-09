@@ -5,7 +5,6 @@
 - git
 - flatpak
 - nix
-- home-manager
 
 ## Installation
 1. Install home-manager

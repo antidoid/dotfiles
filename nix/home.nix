@@ -44,6 +44,7 @@ in {
 
     # fonts
     inter
+    hackgen-nf-font
 
     # GNOME Extensions
     gnomeExtensions.blur-my-shell
