@@ -9,8 +9,8 @@ config = {
 	hide_mouse_cursor_when_typing = false,
 	color_scheme = "UnderTheSea",
 	font = wezterm.font_with_fallback({
-		"Input",
-		{ family = "Symbols Nerd Font Mono", scale = 0.55 },
+		"FiraCodeNerdFont Meduim",
+		"JetBrains Mono"
 	}),
 	window_decorations = "RESIZE",
 	initial_rows = 42,

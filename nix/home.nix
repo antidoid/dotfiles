@@ -44,8 +44,8 @@ in {
 
     # fonts
     inter
-    hackgen-nf-font
-
+    fira-code-nerdfont
+    
     # GNOME Extensions
     gnomeExtensions.blur-my-shell
     gnomeExtensions.appindicator
