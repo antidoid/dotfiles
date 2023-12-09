@@ -9,7 +9,7 @@ config = {
 	hide_mouse_cursor_when_typing = false,
 	color_scheme = "UnderTheSea",
 	font = wezterm.font_with_fallback({
-		"FiraCodeNerdFont Meduim",
+		"FiraCode Nerd Font Mono Med",
 		"JetBrains Mono"
 	}),
 	window_decorations = "RESIZE",

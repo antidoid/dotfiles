@@ -26,7 +26,7 @@ flatpak install -y (cat flatpaks.txt) # fish
 4. Copy the configs into their respective folder
 
 ```sh
-cp -t ~/.config/home-manager nix/home.nix nix/flake.nix nix/nixGL.nix
+cp nix/* ~/.config/home-manager
 cp -rft ~/.config nvim wezterm fish starship.toml
 ```
 
