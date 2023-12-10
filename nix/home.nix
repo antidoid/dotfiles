@@ -53,6 +53,7 @@ in {
     gnomeExtensions.internet-speed-meter
     gnomeExtensions.quick-settings-tweaker
     gnomeExtensions.compact-top-bar
+    gnomeExtensions.notification-banner-reloaded
   ];
 
   programs = {

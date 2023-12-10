@@ -39,6 +39,12 @@
         volume-mixer-enabled = false;
         user-removed-buttons = [ "DarkModeToggle" ];
       };
+
+      "org/gnome/shell/extensions/notification-banner-reloaded" = {
+        always-minimized = 1;
+        anchor-horizontal = 1;
+        animation-direction = 1;
+      };
       
       "org/gnome/desktop/interface" = {
         font-name = "Inter 10";
