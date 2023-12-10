@@ -8,7 +8,8 @@
           "dash-to-dock@micxgx.gmail.com"
           "InternetSpeedMeter@alshakib.dev"
           "quick-settings-tweaks@qwreey"
-          "gnome-compact-top-bar@metehan-arsian.github.io"
+          "gnome-compact-top-bar@metehan-arslan.github.io"
+          "notification-banner-reloaded@marcinjakubowski.github.com"
         ];
 
         disabled-extensions = [];
