@@ -54,6 +54,7 @@ in {
     gnomeExtensions.quick-settings-tweaker
     gnomeExtensions.compact-top-bar
     gnomeExtensions.notification-banner-reloaded
+    gnomeExtensions.user-themes
   ];
 
   programs = {

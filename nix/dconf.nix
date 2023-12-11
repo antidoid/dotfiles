@@ -10,6 +10,7 @@
           "quick-settings-tweaks@qwreey"
           "gnome-compact-top-bar@metehan-arslan.github.io"
           "notification-banner-reloaded@marcinjakubowski.github.com"
+          "user-theme@gnome-shell-extensions.gcampax.github.com"
         ];
 
         disabled-extensions = [];
@@ -46,16 +47,20 @@
         anchor-horizontal = 1;
         animation-direction = 1;
       };
-      
+
+      "org/gnome/shell/extensions/user-theme = {
+        name = "Yaru-prussiangreen-dark"
+      };
+
       "org/gnome/desktop/interface" = {
         font-name = "Inter 10";
         document-font-name = "Inter 11";
         monospace-font-name = "Inter 10";
-        titlebar-font = "Inter Bold 11";
-        gtk-theme = "Adwaita-dark";
+        gtk-theme = "adw-gtk3-dark";
         cursor-theme = "Adwaita";
+        color-scheme = "prefer-dark";
         enable-hot-corners = false;
-        font-anitaliasing = "rgba";
+        font-antialiasing = "rgba";
         icon-theme = "Adwaita";
         show-battery-percentage = true;
         clock-show-date = true;
@@ -80,6 +85,11 @@
         switch-to-workspace-right = ["<Super>l"];
         toggle-fullscreen = ["<Super>f"];
         minimize = [];
+      };
+
+      "org/gnome/desktop/wm/preferences" = {
+        titlebar-font = "Inter Bold 11";
+        button-layout = ":close";
       };
 
       "org/gnome/mutter/keybindings" = {
