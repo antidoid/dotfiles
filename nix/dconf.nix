@@ -48,7 +48,7 @@
         animation-direction = 1;
       };
 
-      "org/gnome/shell/extensions/user-theme = {
+      "org/gnome/shell/extensions/user-theme" = {
         name = "Yaru-prussiangreen-dark";
       };
 
