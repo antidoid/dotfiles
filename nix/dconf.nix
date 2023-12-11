@@ -49,7 +49,7 @@
       };
 
       "org/gnome/shell/extensions/user-theme = {
-        name = "Yaru-prussiangreen-dark"
+        name = "Yaru-prussiangreen-dark";
       };
 
       "org/gnome/desktop/interface" = {
