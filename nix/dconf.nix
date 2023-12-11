@@ -72,7 +72,7 @@
 
       "/org/gnome/desktop/remote-desktop/rdp" = {
         enable = true;
-        screen-share-mode = extend;
+        screen-share-mode = "extend";
         view-only = false;
       };
 
