@@ -70,7 +70,7 @@
         allow-volume-above-100-percent = true;
       };
 
-      "/org/gnome/desktop/remote-desktop/rdp" = {
+      "org/gnome/desktop/remote-desktop/rdp" = {
         enable = true;
         screen-share-mode = "extend";
         view-only = false;
