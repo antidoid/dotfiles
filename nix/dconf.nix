@@ -121,17 +121,11 @@
       };
 
       "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
-        binding = "<Shift><Super>period";
-        command = "brightnessctl set +5%";
-        name = "Increase Brightness";
+        binding = "<Super>Messenger";
+        command = "flatpak run com.rtosta.zapzap";
+        name = "Open WhatsApp";
       };
       
-      "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
-        binding = "<Shift><Super>comma";
-        command = "brightnessctl set 5%-";
-        name = "Decrease Brightness";
-      };
-
       "org/gnome/settings-daemon/plugins/media-keys" = {
         custom-keybindings = [
           "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
@@ -140,4 +134,8 @@
           "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/" 
         ];
       };
+
+      "org/gnome/desktop/input-sources" = {
+        xkb-options = ["caps:ctrl_modifier"];
+      }; 
 }

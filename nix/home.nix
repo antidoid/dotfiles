@@ -41,6 +41,7 @@ in {
     neofetch
     htop
     gh
+    tmux
 
     # fonts
     inter
