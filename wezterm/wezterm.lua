@@ -7,7 +7,7 @@ end
 
 config = {
 	hide_mouse_cursor_when_typing = false,
-	color_scheme = "Rasi (terminal.sexy)",
+	color_scheme = "Pretty and Pastel (terminal.sexy)",
 	font = wezterm.font_with_fallback({
 		"FiraCode Nerd Font Mono Med",
 		"JetBrains Mono",
