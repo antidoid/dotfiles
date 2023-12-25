@@ -20,14 +20,15 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
-    -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
     -- Custom remaps
     ["<C-d>"] = { "<C-d>zz", desc = "Page down and centeres the view" },
     ["<C-u>"] = { "<C-u>zz", desc = "Page up and centeres the view" },
     ["n"] = { "nzzzv" },
     ["N"] = { "Nzzzv" },
+  },
+  x = {
+    ["<leader>p"] = { '"_dP', desc = "Keep the content of current paste register after pasting over" },
   },
   t = {
     -- setting a mapping to false will disable it
