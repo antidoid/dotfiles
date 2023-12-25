@@ -42,6 +42,7 @@ in {
     htop
     gh
     tmux
+    ripgrep
 
     # fonts
     inter
