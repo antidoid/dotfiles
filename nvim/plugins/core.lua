@@ -15,9 +15,11 @@ return {
       return opts
     end,
   },
+  { "nvim-neo-tree/neo-tree.nvim", enabled = false },
   { "max397574/better-escape.nvim", enabled = false },
   { "rcarriga/nvim-notify", enabled = false },
   { " akinsho/toggleterm.nvim", enabled = false },
+
   --
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
   -- {

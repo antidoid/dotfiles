@@ -51,4 +51,13 @@ return {
     event = "VeryLazy",
     config = function() require("nvim-surround").setup {} end,
   },
+
+  -- Disable Tabline
+  {
+    "rebelot/heirline.nvim",
+    opts = function(_, opts)
+      opts.tabline = nil -- remove tabline
+      return opts
+    end,
+  },
 }

@@ -17,6 +17,7 @@ return {
     ignorecase = true,
     smartcase = true,
     incsearch = true,
+    showtabline = 0, -- don't show tabline
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader

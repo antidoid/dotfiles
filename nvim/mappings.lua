@@ -17,15 +17,21 @@ return {
       end,
       desc = "Pick to close",
     },
-    -- tables with the `name` key will be registered with which-key if it's installed
-    -- this is useful for naming menus
-    ["<leader>b"] = { name = "Buffers" },
 
     -- Custom remaps
     ["<C-d>"] = { "<C-d>zz", desc = "Page down and centeres the view" },
     ["<C-u>"] = { "<C-u>zz", desc = "Page up and centeres the view" },
     ["n"] = { "nzzzv" },
     ["N"] = { "Nzzzv" },
+
+    -- disable <leader>b mappings
+    ["<leader>b"] = false,
+    ["<leader>bb"] = false,
+    ["<leader>bd"] = false,
+    ["<leader>b\\"] = false,
+    ["<leader>b|"] = false,
+
+    ["<leader>e"] = { "<cmd>Ex<cr><cr>", desc = "Open Netrw file explorer" },
   },
   x = {
     ["<leader>p"] = { '"_dP', desc = "Keep the content of current paste register after pasting over" },
