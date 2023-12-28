@@ -43,6 +43,8 @@ in {
     gh
     tmux
     ripgrep
+    zsh
+    autojump
 
     # fonts
     inter
