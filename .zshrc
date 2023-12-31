@@ -115,4 +115,4 @@ alias hmu='nix flake update ~/.config/home-manager/ && hms'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-fortune -as
+misfortune -so
