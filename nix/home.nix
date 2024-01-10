@@ -30,7 +30,6 @@ in {
     nixgl.nixGLIntel
     bat
     eza
-    fortune
     starship
     brightnessctl
     lazygit
@@ -45,14 +44,14 @@ in {
     ripgrep
     zsh
     autojump
+    haskellPackages.misfortune
 
     # fonts
     inter
     fira-code-nerdfont
-    
+
     # GNOME Extensions
     gnomeExtensions.blur-my-shell
-    gnomeExtensions.appindicator
     gnomeExtensions.dash-to-dock
     gnomeExtensions.internet-speed-meter
     gnomeExtensions.quick-settings-tweaker

@@ -4,7 +4,6 @@
 
         enabled-extensions = [
           "blur-my-shell@aunetx"
-          "appindicatorsupport@rgcjonas.gmail.com"
           "dash-to-dock@micxgx.gmail.com"
           "InternetSpeedMeter@alshakib.dev"
           "quick-settings-tweaks@qwreey"
