@@ -44,6 +44,7 @@ in {
     ripgrep
     zsh
     autojump
+    jq
     haskellPackages.misfortune
 
     # fonts
