@@ -15,7 +15,7 @@ if status is-interactive
     alias nv='nvim $1'
     alias cat='bat'
     alias mann='tldr $1'
-    alias hms='home-manager switch --flake ~/.config/home-manager/#antid'
+    alias hms='home-manager switch --flake ~/.config/home-manager/#$USER'
     alias hmu='nix flake update ~/.config/home-manager/ && hms'
 
     # dotfiles

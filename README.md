@@ -33,7 +33,7 @@ cp -rft ~/.config nvim wezterm fish starship.toml
 5. Install the nix packages
 
 ```sh
-home-manager switch --flake ~/.config/home-manager/#antid
+home-manager switch --flake ~/.config/home-manager/#$USER
 ```
 
 6. Restart
