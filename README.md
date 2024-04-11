@@ -27,7 +27,7 @@ flatpak install -y (cat flatpaks.txt) # fish
 
 ```sh
 cp nix/* ~/.config/home-manager
-cp -rft ~/.config wezterm fish starship.toml
+cp -rft ~/.config nvim wezterm fish starship.toml
 ```
 
 5. Install the nix packages
@@ -36,14 +36,4 @@ cp -rft ~/.config wezterm fish starship.toml
 home-manager switch --flake ~/.config/home-manager/#antid
 ```
 
-6. Configure Neovim
-```sh
-git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-nvim
-```
-
-```sh
-mkdir -p ~/.config/nvim/lua/user && cp -r nvim/* ~/.config/nvim/lua/user
-```
-
-7. Restart
+6. Restart
