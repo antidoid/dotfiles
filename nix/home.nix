@@ -25,13 +25,11 @@ in {
 
     # CLI
     fish
-    python311Packages.ipython
     neovim
     nixgl.nixGLIntel
     bat
     eza
     starship
-    brightnessctl
     lazygit
     tldr
     wl-clipboard
@@ -49,7 +47,7 @@ in {
 
     # fonts
     inter
-    fira-code-nerdfont
+    iosevka-bin
 
     # GNOME Extensions
     gnomeExtensions.blur-my-shell
