@@ -17,8 +17,8 @@
         favorite-apps = [
           "org.gnome.Software.desktop"
           "org.gnome.Nautilus.desktop"
-          "org.wezfurlong.wezterm.desktop"
           "org.mozilla.firefox.desktop"
+          "org.gnome.Ptyxis.desktop"
           "com.spotify.Client.desktop"
           "com.stremio.Stremio.desktop"
         ];
@@ -109,7 +109,7 @@
 
       "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
           binding = "<Super>Return";
-          command = "wezterm";
+          command = "ptyxis";
           name = "Terminal";
       };
 

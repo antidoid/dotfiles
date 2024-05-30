@@ -20,29 +20,10 @@ in {
   
   home.packages = with pkgs; [
     # GUI
-    (nixGL wezterm)
-    (nixGL vscode)
 
     # CLI
-    fish
-    neovim
     nixgl.nixGLIntel
-    bat
-    eza
-    starship
-    lazygit
-    tldr
     wl-clipboard
-    gcc
-    nodejs
-    neofetch
-    htop
-    gh
-    tmux
-    ripgrep
-    zsh
-    autojump
-    jq
     haskellPackages.misfortune
 
     # fonts
