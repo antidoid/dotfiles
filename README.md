@@ -5,6 +5,7 @@
 - git
 - flatpak
 - nix
+- Homebrew
 
 ## Installation
 1. Install home-manager
@@ -16,24 +17,31 @@
 git clone https://github.com/antidoid/dotfiles && cd dotfiles
 ```
 
-3. Install the flatpaks
+3. Install the Brew packages
 
 ```sh
-flatpak install -y $(< flatpaks.txt) # bash
+brew bundle
+```
+
+4. Install the flatpaks
+
+```sh
+flatpak install -y $(< flatpaks.txt) # bash/zsh
 flatpak install -y (cat flatpaks.txt) # fish
 ```
 
-4. Copy the configs into their respective folder
+5. Copy the configs into their respective folder
 
 ```sh
+cp .zshrc ~
 cp nix/* ~/.config/home-manager
-cp -rft ~/.config nvim wezterm fish starship.toml
+cp -rft ~/.config nvim 
 ```
 
-5. Install the nix packages
+6. Configure the system with Nix
 
 ```sh
 home-manager switch --flake ~/.config/home-manager/#$USER
 ```
 
-6. Restart
+7. Restart

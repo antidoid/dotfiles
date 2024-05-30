@@ -116,3 +116,8 @@ alias hmu='nix flake update ~/.config/home-manager/ && hms'
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 misfortune -so
+
+# Command Autocompletions
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /var/home/linuxbrew/.linuxbrew/bin/terraform terraform
+source $(brew --prefix)/etc/bash_completion.d/az
