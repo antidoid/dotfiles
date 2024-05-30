@@ -104,8 +104,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 
-alias ll='exa -lbh --icons --color=auto --group-directories-first'
-alias la='exa -lah --icons --color=auto --group-directories-first'
+alias ll='eza -lbh --icons --color=auto --group-directories-first'
+alias la='eza -lah --icons --color=auto --group-directories-first'
 alias nv='nvim $1'
 alias cat='bat'
 alias hms='home-manager switch --flake ~/.config/home-manager/#antid'
