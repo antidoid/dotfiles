@@ -1,4 +1,7 @@
 tap "homebrew/bundle"
+tap "homebrew/linux-fonts"
+brew "font-inter"
+brew "font-iosevka"
 brew "autojump"
 brew "bat"
 brew "btop"
