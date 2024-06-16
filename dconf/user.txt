@@ -121,3 +121,10 @@ close-tab='<Shift><Control>w'
 move-next-tab='<Control>Tab'
 move-previous-tab='<Shift><Control>Tab'
 undo-close-tab='<Shift><Control><Alt>w'
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+night-light-temperature=uint32 4576
+night-light-schedule-automatic=false
+night-light-schedule-from=7.0
+night-light-schedule-to=7.0
