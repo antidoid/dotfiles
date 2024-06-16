@@ -15,6 +15,7 @@ transparency-mode='FIXED'
 background-opacity=0.5
 hot-keys=false
 show-icons-emblems=false
+dock-fixed=false
 
 [org/gnome/shell/extensions/quick-settings-tweaks]
 volume-mixer-enabled=false
@@ -64,7 +65,7 @@ move-to-workspace-right=['<Shift><Super>l']
 switch-to-workspace-left=['<Super>h']
 switch-to-workspace-right=['<Super>l']
 toggle-fullscreen=['<Super>f']
-minimize=[]
+minimize=@as []
 
 [org/gnome/desktop/wm/preferences]
 titlebar-font='Inter Bold 11'
