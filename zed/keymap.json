@@ -1,6 +1,6 @@
 [
   {
-    "context": "EmptyPane || SharedScreen || ProjectPanel || Terminal || Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
+    "context": "EmptyPane || SharedScreen || ProjectPanel || Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
     "bindings": {
       "ctrl-s |": "workspace::NewTerminal",
       "space e": "workspace::ToggleLeftDock",
