@@ -9,7 +9,8 @@
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
       "space f f": "file_finder::Toggle",
-      "space f b": "tab_switcher::Toggle",
+      "space f o": "tab_switcher::Toggle",
+      "space f w": "pane::DeploySearch",
       "space l g": [
         "workspace::SendKeystrokes",
         ": new center terminal enter lazygit enter"
@@ -23,19 +24,31 @@
     }
   },
   {
+    "context": "TabSwitcher",
+    "bindings": {
+      "ctrl-d": "tab_switcher::CloseSelectedItem"
+    }
+  },
+  {
     "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
     "bindings": {
+      // All keybindings for normal mode in vim
       "shift-k": "editor::Hover",
       "space l r": "editor::Rename",
+      "g c c": "vim::ToggleComments",
       "space o": "outline::Toggle",
+      "space g d": "editor::GoToDefinition",
+      "space v g d": "editor::GoToDefinitionSplit",
       "|": "pane::SplitLeft",
       "\\": "pane::SplitDown"
     }
   },
   {
-    "context": "TabSwitcher",
+    "context": "Editor && vim_mode == visual && vim_operator == none && !VimWaiting",
     "bindings": {
-      "ctrl-d": "tab_switcher::CloseSelectedItem"
+      // Vim visual mode keybindings go here
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
     }
   }
 ]
