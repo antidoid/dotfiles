@@ -27,7 +27,9 @@
     "bindings": {
       "shift-k": "editor::Hover",
       "space l r": "editor::Rename",
-      "space o": "outline::Toggle"
+      "space o": "outline::Toggle",
+      "|": "pane::SplitLeft",
+      "\\": "pane::SplitDown"
     }
   },
   {
