@@ -2,7 +2,8 @@
   {
     "context": "EmptyPane || SharedScreen || ProjectPanel || Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
     "bindings": {
-      "ctrl-s |": "workspace::NewTerminal",
+      "space t": "workspace::NewTerminal",
+      "space c t": "workspace::NewCenterTerminal",
       "space e": "workspace::ToggleLeftDock",
       "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
@@ -36,7 +37,7 @@
       "shift-k": "editor::Hover",
       "space l r": "editor::Rename",
       "g c c": "vim::ToggleComments",
-      "space o": "outline::Toggle",
+      "space f s": "outline::Toggle",
       "space g d": "editor::GoToDefinition",
       "space v g d": "editor::GoToDefinitionSplit",
       "|": "pane::SplitLeft",
