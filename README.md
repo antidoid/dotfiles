@@ -4,44 +4,39 @@
 
 - git
 - flatpak
-- nix
 - Homebrew
 
 ## Installation
-1. Install home-manager
-[Home Manager Installation Manual](https://nix-community.github.io/home-manager/index.html#sec-install-standalone)
-
-2. Clone this repo and enter folder:
+1. Clone this repo and enter folder:
 
 ```sh
 git clone https://github.com/antidoid/dotfiles && cd dotfiles
 ```
 
-3. Install the Brew packages
+2. Install the Brew packages
 
 ```sh
 brew bundle
 ```
 
-4. Install the flatpaks
+3. Install the flatpaks
 
 ```sh
 flatpak install -y $(< flatpaks.txt) # bash/zsh
 flatpak install -y (cat flatpaks.txt) # fish
 ```
 
-5. Copy the configs into their respective folder
+4. Copy the configs into their respective folder
 
 ```sh
 cp .zshrc ~
-cp nix/* ~/.config/home-manager
-cp -rft ~/.config nvim 
+cp -rft ~/.config nvim zed
 ```
 
-6. Configure the system with Nix
+5. Configure Gnome
 
 ```sh
-home-manager switch --flake ~/.config/home-manager/#$USER
+sudo sed -i '1s|^|service-db:keyfile user\n|' /etc/dconf/profile/user
 ```
 
 7. Restart
