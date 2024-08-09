@@ -30,7 +30,7 @@ flatpak install -y (cat flatpaks.txt) # fish
 
 ```sh
 cp .zshrc ~
-cp -rft ~/.config nvim zed
+cp -rft ~/.config nvim zed dconf starship.toml
 ```
 
 5. Configure Gnome
