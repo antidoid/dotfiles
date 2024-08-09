@@ -2,7 +2,7 @@
 disable-user-extensions=false
 enabled-extensions=['blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'InternetSpeedMeter@alshakib.dev', 'quick-settings-tweaks@qwreey', 'gnome-compact-top-bar@metehan-arslan.github.io', 'notification-banner-reloaded@marcinjakubowski.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 disabled-extensions=[]
-favorite-apps=['org.gnome.Software.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'org.mozilla.firefox.desktop', 'com.spotify.Client.desktop', 'com.stremio.Stremio.desktop']
+favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'org.mozilla.firefox.desktop', 'com.spotify.Client.desktop', 'com.stremio.Stremio.desktop', 'dev.zed.Zed']
 last-selected-power-profile='power-saver'
 
 [org/gnome/shell/extensions/dash-to-dock]
@@ -108,7 +108,7 @@ audible-bell=false
 default-columns=uint32 150
 default-profile-uuid='2871e8027773ae74d6c87a5f659bbc74'
 default-rows=uint32 32
-font-name='Iosevka Semi-Bold 14'
+font-name='Iosevka Nerd Font Mono Semi-Bold 14'
 interface-style='system'
 profile-uuids=['2871e8027773ae74d6c87a5f659bbc74']
 restore-session=false
