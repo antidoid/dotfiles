@@ -36,7 +36,7 @@ cp -rft ~/.config nvim zed
 5. Configure Gnome
 
 ```sh
-sudo sed -i '1s|^|service-db:keyfile user\n|' /etc/dconf/profile/user
+sudo sed -i '1s|^|service-db:keyfile\/user\n|' /etc/dconf/profile/user
 ```
 
 7. Restart
