@@ -29,7 +29,7 @@ flatpak install -y (cat flatpaks.txt) # fish
 4. Copy the configs into their respective folder
 
 ```sh
-cp .zshrc ~
+cp -ft ~ .zshrc .tmux.conf
 cp -rft ~/.config nvim zed dconf starship.toml
 ```
 
