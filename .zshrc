@@ -21,6 +21,9 @@ fortune -s
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
+## case-insensitive (all) completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
 # Command Autocompletions
 autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit

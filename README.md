@@ -31,6 +31,7 @@ flatpak install -y (cat flatpaks.txt) # fish
 ```sh
 cp -ft ~ .zshrc .tmux.conf
 cp -rft ~/.config nvim zed dconf starship.toml
+cp -rf zed/* ~/.var/app/dev.zed.Zed/config/zed/
 ```
 
 5. Configure Gnome
