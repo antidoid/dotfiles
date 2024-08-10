@@ -4,12 +4,10 @@ plugins=(
 )
 
 # Save History
-export HISTFILE=~/.zsh_history
-export HISTFILESIZE=1000000000
-export HISTSIZE=1000000000
-setopt INC_APPEND_HISTORY
-export HISTTIMEFORMAT="[%F %T] "
-setopt EXTENDED_HISTORY
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
 
 # Aliases
 alias ll='eza -lbh --icons --color=auto --group-directories-first'
@@ -28,3 +26,7 @@ autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+complete -o nospace -C /var/home/linuxbrew/.linuxbrew/bin/terraform terraform
+source $(brew --prefix)/etc/bash_completion.d/az
+source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
