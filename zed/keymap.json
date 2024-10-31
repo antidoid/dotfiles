@@ -15,7 +15,8 @@
       "space l g": [
         "workspace::SendKeystrokes",
         ": new center terminal enter lazygit enter"
-      ]
+      ],
+      "space c l": "workspace::ToggleCenteredLayout"
     }
   },
   {
