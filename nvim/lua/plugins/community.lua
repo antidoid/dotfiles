@@ -7,4 +7,5 @@ return {
   { import = "astrocommunity.colorscheme.rose-pine" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.scrolling.mini-animate" },
 }
