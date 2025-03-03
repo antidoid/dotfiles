@@ -2,13 +2,13 @@
   {
     "context": "EmptyPane || SharedScreen || ProjectPanel || Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
     "bindings": {
-      "space t": "workspace::NewTerminal",
+      "space t": "workspace::ToggleRightDock",
       "space c t": "workspace::NewCenterTerminal",
       "space e": "workspace::ToggleLeftDock",
-      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
-      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
       "space f f": "file_finder::Toggle",
       "space f o": "tab_switcher::Toggle",
       "space f w": "pane::DeploySearch",
@@ -22,7 +22,11 @@
   {
     "context": "Terminal",
     "bindings": {
-      "ctrl-d": "pane::CloseActiveItem"
+      "ctrl-d": ["terminal::SendKeystroke", "ctrl-d"],
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown"
     }
   },
   {
