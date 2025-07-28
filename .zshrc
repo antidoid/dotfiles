@@ -15,6 +15,7 @@ alias la='eza -lah --icons --color=auto --group-directories-first'
 alias tree='eza -l --tree'
 alias nv='nvim $1'
 alias cat='bat'
+alias zd='flatpak run dev.zed.Zed'
 
 # Inits
 fortune -s
