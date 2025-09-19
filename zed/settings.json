@@ -1,21 +1,14 @@
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run the `open default settings` command
-// from the command palette or from `Zed` application menu.
 {
   "tab_bar": {
     "show": false
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
-  "buffer_font_family": "Iosevka-Medium-Extended",
+  "buffer_font_family": "Iosevka Nerd Font Mono",
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Summercamp"
+    "dark": "Carbonfox - opaque"
   },
   "vim_mode": true,
   "relative_line_numbers": true,
@@ -24,6 +17,9 @@
     "show": "never"
   },
   "terminal": {
-    "dock": "right"
+    "dock": "right",
+    "shell": {
+      "program": "zsh"
+    }
   }
 }
